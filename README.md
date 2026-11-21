@@ -30,6 +30,15 @@ BedPlay talks to the same Xbox streaming service the official clients use, on th
 - **Private by design:** your tokens stay in the app's private storage; the app only talks to Microsoft's servers and your console. No analytics, no ads, no server of ours.
 - English and Italian interface (follows the device language).
 
+## Tested devices
+
+| Device | OS | Result |
+|---|---|---|
+| Xiaomi Mi TV Stick (MiTV-AYFR0, 2 GB RAM) | Android 11 | Works, 1080p60 |
+| Amazon Fire TV Stick 4K (1st gen, 2018) | Fire OS 6 (Android 7.1.2) | Works, 1080p60 |
+
+Console used: Xbox Series X. Have you tried another stick or console? Please open an issue with your `tools/measure.py` output and we will add it here.
+
 ## Screenshots
 
 <p align="center">
