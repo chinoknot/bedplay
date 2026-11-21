@@ -1,0 +1,24 @@
+BedPlay includes or builds on third-party software.
+
+xbox-xcloud-player 0.2.11
+  https://github.com/unknownskl/xbox-xcloud-player
+  Copyright (c) Jim Kroon (UnknownSKL)
+  License: MIT (as declared in the package's package.json)
+  Used as the WebRTC player. The bundle in android/app/src/main/assets/dist is built by web/build.js
+  from the unmodified npm package, with one change: the screen size sent to the console is read from
+  window.__dims and "custom resolution" from window.__customRes (see web/build.js).
+
+events 3.3.0
+  https://github.com/browserify/events
+  Copyright Joyent, Inc. and other Node contributors
+  License: MIT
+  Bundled into the player for use in the browser.
+
+esbuild
+  https://github.com/evanw/esbuild
+  Copyright (c) 2020 Evan Wallace
+  License: MIT
+  Used only at build time.
+
+"Xbox", "Xbox Series X|S" and "Game Pass" are trademarks of Microsoft Corporation. BedPlay is not
+affiliated with or endorsed by Microsoft.

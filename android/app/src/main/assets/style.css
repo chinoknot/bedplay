@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0b0b0b; color: #eee; font-family: sans-serif; overflow: hidden; }
+.screen { position: fixed; inset: 0; padding: 6vh 6vw; }
+.hidden { display: none !important; }
+h1 { font-size: 5vh; margin: 0 0 3vh; font-weight: 600; }
+h2 { font-size: 3vh; margin: 3vh 0 1.5vh; color: #9aa; font-weight: 500; }
+button {
+  display: block; width: 100%; max-width: 70vw; text-align: left; margin: 1vh 0; padding: 2vh 2vw;
+  font-size: 3.2vh; color: #eee; background: #1d1d1f; border: 3px solid transparent; border-radius: 10px;
+}
+button:focus { outline: none; border-color: #ff8a1f; background: #2b2217; }
+.code { font-size: 12vh; letter-spacing: 1.2vh; color: #ff8a1f; margin: 4vh 0; font-weight: 700; }
+.big { font-size: 3.4vh; line-height: 1.5; max-width: 80vw; }
+.dim { color: #889; font-size: 2.6vh; }
+#busyText { position: absolute; left: 0; right: 0; top: 45vh; text-align: center; font-size: 4vh; }
+#stream { padding: 0; background: #000; }
+#videoHolder { position: absolute; inset: 0; background: #000; }
+#videoHolder video { width: 100vw; height: 100vh; object-fit: contain; background: #000; }
+#hud { position: absolute; left: 12px; top: 8px; font: 18px monospace; color: #7f7; background: rgba(0,0,0,.55); padding: 6px 10px; white-space: pre; }
+#toast { position: absolute; left: 0; right: 0; bottom: 6vh; text-align: center; font-size: 3.4vh; }
+#toast span { background: rgba(0,0,0,.75); padding: 1.2vh 2vw; border-radius: 8px; }

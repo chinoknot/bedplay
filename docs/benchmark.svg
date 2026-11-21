@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Before and after on a Mi TV Stick: bitrate fell from 28.1 to 8.1 Mbit/s and the jitter buffer from 18-30 ms to about 5 ms">
+  <rect width="900" height="300" rx="20" fill="#141824"/>
+  <g font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" fill="#e8eaf0">
+    <text x="40" y="38" font-size="20" font-weight="700">Mi TV Stick: stock player vs BedPlay tuning</text>
+    <text x="40" y="60" font-size="13" fill="#9aa0ae">Same console, same Wi-Fi. Bitrate: 3 s window. Jitter buffer: average over the session. Lower is better.</text>
+
+    <!-- Bitrate -->
+    <text x="90" y="100" font-size="16" font-weight="600">Bitrate (Mbit/s)</text>
+    <rect x="110" y="125" width="90" height="140" rx="5" fill="#6b7280"/>
+    <rect x="240" y="233" width="90" height="32" rx="5" fill="#FF8A1F"/>
+    <text x="155" y="118" font-size="18" text-anchor="middle">28.1</text>
+    <text x="285" y="226" font-size="18" text-anchor="middle" font-weight="700">8.1</text>
+    <text x="155" y="285" font-size="12" text-anchor="middle" fill="#9aa0ae">1440p stock</text>
+    <text x="285" y="285" font-size="12" text-anchor="middle" fill="#9aa0ae">1080p BedPlay</text>
+
+    <!-- Jitter buffer -->
+    <text x="530" y="100" font-size="16" font-weight="600">Jitter buffer (ms)</text>
+    <rect x="550" y="125" width="90" height="140" rx="5" fill="#6b7280"/>
+    <rect x="680" y="242" width="90" height="23" rx="5" fill="#FF8A1F"/>
+    <text x="595" y="118" font-size="18" text-anchor="middle">18-30</text>
+    <text x="725" y="235" font-size="18" text-anchor="middle" font-weight="700">~5</text>
+    <text x="595" y="285" font-size="12" text-anchor="middle" fill="#9aa0ae">1440p stock</text>
+    <text x="725" y="285" font-size="12" text-anchor="middle" fill="#9aa0ae">1080p BedPlay</text>
+  </g>
+</svg>

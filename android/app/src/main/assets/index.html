@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BedPlay</title>
+<link rel="stylesheet" href="/style.css">
+<script>
+// "Virtual" gamepad: the Android app pushes the pad state in here and the player library reads it as a normal gamepad.
+(function () {
+  var pad = {
+    id: 'Xbox Wireless Controller (STANDARD GAMEPAD Vendor: 045e Product: 02fd)', index: 0, connected: true,
+    mapping: 'standard', timestamp: 0, axes: [0, 0, 0, 0], vibrationActuator: null, hapticActuators: [],
+    buttons: []
+  };
+  for (var i = 0; i < 17; i++) pad.buttons.push({ pressed: false, touched: false, value: 0 });
+  navigator.getGamepads = function () { pad.timestamp = performance.now(); return [pad, null, null, null]; };
+  window.__padObj = pad;
+  window.__pad = function (b, a) {
+    for (var i = 0; i < 17; i++) { pad.buttons[i].value = b[i]; pad.buttons[i].pressed = b[i] > 0.5; pad.buttons[i].touched = b[i] > 0; }
+    pad.axes = a;
+    if (window.__padHook) window.__padHook(b);
+  };
+})();
+</script>
+<script src="/dist/xCloudPlayer.min.js"></script>
+</head>
+<body>
+<div id="login" class="screen hidden"></div>
+<div id="menu" class="screen hidden"></div>
+<div id="stream" class="screen hidden">
+  <div id="videoHolder"></div>
+  <div id="hud" class="hidden"></div>
+  <div id="toast" class="hidden"></div>
+</div>
+<div id="busy" class="screen hidden"><div id="busyText"></div></div>
+<script src="/app.js"></script>
+</body>
+</html>

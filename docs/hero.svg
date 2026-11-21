@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-label="BedPlay - stream your Xbox to any TV stick">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141824"/>
+      <stop offset="1" stop-color="#2a1d14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="1120" cy="60" r="150" fill="#FFD27A" opacity="0.05"/>
+  <circle cx="1180" cy="330" r="190" fill="#FF8A1F" opacity="0.06"/>
+  <g transform="translate(80 70) scale(2.6)">
+    <rect width="96" height="96" rx="20" fill="#141824" stroke="#ffffff" stroke-opacity="0.12"/>
+    <path fill="#FFD27A" d="M58,14 a24,24 0 1,0 20,40 a19,19 0 0,1 -20,-40z"/>
+    <path fill="#FF8A1F" d="M26,52 h44 a13,13 0 0 1 12.500,16.500 l-2.500,9 a6,6 0 0 1 -10.300,2.200 l-6.500,-7.700 h-30.400 l-6.500,7.700 a6,6 0 0 1 -10.300,-2.200 l-2.500,-9 a13,13 0 0 1 12.500,-16.500z"/>
+    <path fill="#141824" d="M26,59h12v3.6h-12z M30.2,54.8h3.6v12h-3.6z"/>
+    <path fill="#141824" d="M61.4,57.5a2.6,2.6 0 1,0 5.2,0a2.6,2.6 0 1,0 -5.2,0z M67.4,63.5a2.6,2.6 0 1,0 5.2,0a2.6,2.6 0 1,0 -5.2,0z"/>
+  </g>
+  <g font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <text x="370" y="150" font-size="88" font-weight="700" fill="#ffffff">BedPlay</text>
+    <text x="374" y="205" font-size="34" fill="#FFD27A">Your Xbox on any TV stick. From bed.</text>
+    <text x="374" y="256" font-size="24" fill="#c9cdd6">Low-latency Remote Play for Fire TV and Android TV sticks</text>
+    <text x="374" y="292" font-size="24" fill="#c9cdd6">1080p60 on a 2 GB stick, ~8 Mbit/s, ~5 ms jitter buffer</text>
+  </g>
+</svg>
